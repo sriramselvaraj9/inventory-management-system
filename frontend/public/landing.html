@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Inventory Management System | Stock Tracking & CSV Import</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional Inventory Management System with real-time stock tracking, CSV import/export, low stock alerts, and responsive design. Perfect for businesses of all sizes.">
+    <meta name="keywords" content="inventory management, stock tracking, warehouse management, CSV import, inventory system, business software, stock control, inventory tracking">
+    <meta name="author" content="Inventory Management Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Professional Inventory Management System">
+    <meta property="og:description" content="Complete inventory management solution with real-time tracking, CSV operations, and professional reporting.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inventory-management.vercel.app">
+    <meta property="og:image" content="https://inventory-management.vercel.app/preview.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professional Inventory Management System">
+    <meta name="twitter:description" content="Complete inventory management solution for modern businesses">
+    <meta name="twitter:image" content="https://inventory-management.vercel.app/preview.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://inventory-management.vercel.app">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Inventory Management System",
+      "description": "Professional inventory management system with real-time tracking and CSV operations",
+      "url": "https://inventory-management.vercel.app",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "Inventory Management Team"
+      },
+      "featureList": [
+        "Real-time Stock Tracking",
+        "CSV Import/Export",
+        "Low Stock Alerts", 
+        "Responsive Design",
+        "Inventory History",
+        "Advanced Search & Filtering"
+      ]
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .cta {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .btn {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        .btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        .demo {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📦 Professional Inventory Management System</h1>
+            <p>Complete inventory tracking solution with real-time updates, CSV operations, and professional reporting</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>📊 Real-Time Tracking</h3>
+                <p>Monitor inventory levels in real-time with automatic low-stock alerts and comprehensive reporting</p>
+            </div>
+            <div class="feature">
+                <h3>📤 CSV Import/Export</h3>
+                <p>Bulk import products via CSV files and export data for analysis with built-in validation</p>
+            </div>
+            <div class="feature">
+                <h3>📱 Responsive Design</h3>
+                <p>Access from any device - desktop, tablet, or mobile with touch-optimized interface</p>
+            </div>
+            <div class="feature">
+                <h3>🔍 Advanced Search</h3>
+                <p>Powerful search and filtering by name, SKU, category, status with instant results</p>
+            </div>
+            <div class="feature">
+                <h3>📈 Inventory History</h3>
+                <p>Complete audit trail of all inventory changes with timestamps and reason tracking</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Fast Performance</h3>
+                <p>Lightning-fast SQLite database with pagination for handling thousands of products</p>
+            </div>
+        </div>
+
+        <div class="demo">
+            <h2>🚀 Try the Live Demo</h2>
+            <p>Experience the full functionality with sample data. No registration required!</p>
+            <div class="cta">
+                <a href="/products" class="btn">🎯 Launch Application</a>
+                <a href="/api/health" class="btn">🔗 View API Status</a>
+            </div>
+        </div>
+
+        <div class="demo">
+            <h2>✨ Key Features</h2>
+            <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                <li>✅ Add, Edit, Delete Products</li>
+                <li>✅ Real-time Stock Level Monitoring</li>
+                <li>✅ Low Stock Warnings</li>
+                <li>✅ CSV Bulk Import with Error Handling</li>
+                <li>✅ Data Export for Backup/Analysis</li>
+                <li>✅ Advanced Search & Filtering</li>
+                <li>✅ Inventory Adjustment Tracking</li>
+                <li>✅ Complete Audit History</li>
+                <li>✅ Mobile-Friendly Interface</li>
+                <li>✅ Professional Dashboard</li>
+            </ul>
+        </div>
+
+        <div class="demo">
+            <h2>🎯 Perfect For</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; text-align: center;">
+                <div>🏪 <strong>Retail Stores</strong></div>
+                <div>🏭 <strong>Warehouses</strong></div>
+                <div>🏢 <strong>Small Businesses</strong></div>
+                <div>📦 <strong>E-commerce</strong></div>
+                <div>🛠️ <strong>Manufacturing</strong></div>
+                <div>🏥 <strong>Healthcare</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling and interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add fade-in animation to features
+            const features = document.querySelectorAll('.feature');
+            features.forEach((feature, index) => {
+                feature.style.opacity = '0';
+                feature.style.transform = 'translateY(30px)';
+                setTimeout(() => {
+                    feature.style.transition = 'all 0.6s ease';
+                    feature.style.opacity = '1';
+                    feature.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
