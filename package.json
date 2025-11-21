@@ -1,16 +1,18 @@
 {
   "name": "inventory-management-system",
   "version": "1.0.0",
-  "description": "Professional Inventory Management System with CSV import/export, real-time tracking, and responsive design",
-  "main": "server.js",
+  "description": "A comprehensive inventory management system for small to medium businesses",
+  "main": "backend/server.js",
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js",
-    "build": "echo 'Railway will handle build'",
-    "postinstall": "echo 'Installation complete'"
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "start:backend": "cd backend && node server.js",
+    "start:frontend": "cd frontend && npm start"
   },
   "dependencies": {
     "express": "^4.18.2",
