@@ -5,7 +5,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Production builds
-build/
+# build/ - We want to include backend/public for Railway
 dist/
 
 # Environment variables

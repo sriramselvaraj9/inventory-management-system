@@ -1,21 +1,11 @@
 providers = ["node"]
 
-[phases.setup]
-nixPkgs = ["nodejs-18_x", "npm-9_x"]
+[variables]
+NODE_VERSION = "18"
+NPM_CONFIG_PRODUCTION = "false"
 
-[phases.install]
-cmds = [
-  "npm ci --only=production",
-  "cd frontend && npm ci",
-  "cd backend && npm ci"
-]
-
-[phases.build] 
-cmds = [
-  "cd frontend && CI=false npm run build",
-  "mkdir -p backend/public",
-  "cp -r frontend/build/* backend/public/"
-]
+[phases.build]
+cmds = ["echo 'Simple build process'"]
 
 [start]
-cmd = "cd backend && node server.js"
+cmd = "node backend/server.js"
